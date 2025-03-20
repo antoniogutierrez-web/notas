@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tablero Kanban</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="kanban-container">
+    <header>
+      <h1>Tablero Kanban</h1>
+    </header>
+    <div class="kanban-board">
+      <div class="kanban-column" data-status="todo">
+        <h2>Por Hacer</h2>
+        <ul id="todo-tasks" class="task-list"></ul>
+      </div>
+      <div class="kanban-column" data-status="in-progress">
+        <h2>En Progreso</h2>
+        <ul id="in-progress-tasks" class="task-list"></ul>
+      </div>
+      <div class="kanban-column" data-status="done">
+        <h2>Hecho</h2>
+        <ul id="done-tasks" class="task-list"></ul>
+      </div>
+    </div>
+    <div class="task-form">
+      <input id="task-title" type="text" placeholder="Título de la tarea" />
+      <textarea id="task-desc" placeholder="Descripción (opcional)"></textarea>
+      <button id="add-task-btn">Añadir Tarea</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
